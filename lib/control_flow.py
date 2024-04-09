@@ -17,9 +17,22 @@ def hows_the_weather(temperature):
 
 
 def fizzbuzz(num):
-    # your code here
-    pass
+    if not num % 15:
+        return "FizzBuzz"
+    elif not num % 5:
+        return "Buzz"
+    elif not num % 3:
+        return "Fizz"
+    
+    return num
+    
+    
+
 
 def calculator(operation, num1, num2):
-    # your code here
-    pass
+    if operation == "+" or operation == "-" or operation == "*" or operation == "/":
+        sum = str(num1) + operation + str(num2)
+        return eval(sum)
+    else:
+        print("Invalid operation!")
+        return None
