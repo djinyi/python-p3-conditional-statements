@@ -2,7 +2,7 @@
 
 def admin_login(username, password):
     # your code here
-    pass
+    return "Access granted" if username.lower() == "admin" and password == "12345" else "Access denied"
 
 def hows_the_weather(temperature):
     # your code here
